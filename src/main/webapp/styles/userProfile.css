@@ -1,0 +1,106 @@
+.container-userProfile {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.profile-section {
+	margin: 10px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	min-width: 300px;
+	flex: 1 1 300px;
+}
+
+.update-section {
+	margin: 10px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	min-width: 300px;
+	flex: 1 1 300px;
+	flex-direction: column;
+	display: flex;
+}
+
+.error {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+@media ( max-width : 1024px) {
+	.container-userProfile {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.profile-section {
+		padding: 10px;
+	}
+	.update-section {
+		padding: 10px;
+	}
+}
+
+@media ( min-width : 700px) and (max-width : 1024px) {
+	.container-userProfile {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.profile-section {
+		padding: 10px;
+	}
+	.update-section {
+		padding: 10px;
+	}
+}
+
+@media ( min-width : 500px) and (max-width : 700px) {
+	.container-userProfile {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.profile-section {
+		padding: 10px;
+	}
+	.update-section {
+		padding: 10px;
+	}
+}
+
+@media ( min-width : 371px) and (max-width:500px) {
+	.container-userProfile {
+		align-items: center;
+		padding-left: calc(15% + 15px);
+		width: 300px;
+	}
+	.profile-section {
+		padding: 10px;
+	}
+	.update-section {
+		padding: 10px;
+	}
+}
+
+@media ( min-width : 320px) and (max-width:370px) {
+	.container-userProfile {
+		align-items: center;
+		padding-left: calc(5% + 15px);
+		width: 300px;
+	}
+	.profile-section {
+		padding: 10px;
+	}
+	.update-section {
+		padding: 10px;
+	}
+}

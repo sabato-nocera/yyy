@@ -1,0 +1,152 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.cart-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+	text-align: left;
+}
+
+.product-price {
+	font-weight: bold;
+}
+
+.product-quantity {
+	width: 60px;
+}
+
+.product-subtotal {
+	font-weight: bold;
+}
+
+.cart-summary {
+	margin-top: 30px;
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+	text-align: right;
+}
+
+.cart-total {
+	font-weight: bold;
+}
+
+.checkout-btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.empty-cart-msg {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 30px 0;
+}
+
+.empty-cart-msg a {
+	text-decoration: none;
+}
+
+.empty-cart-msg a:hover {
+	text-decoration: underline;
+}
+
+.error {
+	margin-top: 5px;
+}
+
+.remove-item button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* product*/
+.product-details {
+	display: flex;
+	align-items: flex-start;
+}
+
+.product-image {
+	flex: 0 0 40%;
+}
+
+.product-image img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.product-info {
+	flex: 0 0 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-name {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.product-description {
+	margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media all and (max-width: 768px) {
+	.product-details {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.product-image img {
+		width: 25%;
+		margin-right: 20px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.cart-table th, .cart-table td {
+		padding: 0px;
+		font-size: 12px;
+	}
+	.product-image {
+		display: none;
+	}
+	.product-details {
+		flex-direction: row;
+	}
+	.product-name, .product-description {
+		font-size: 14px;
+	}
+	.product-price, .product-subtotal {
+		font-size: 12px;
+	}
+	.cart-total {
+		font-size: 14px;
+	}
+	.checkout-btn {
+		font-size: 14px;
+		padding: 8px 16px;
+	}
+	.empty-cart-msg {
+		font-size: 14px;
+		margin: 20px 0;
+	}
+}

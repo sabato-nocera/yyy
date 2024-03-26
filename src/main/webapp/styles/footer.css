@@ -1,0 +1,22 @@
+footer {
+	padding: 20px 0;
+}
+
+.container-footer {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.container-footer p {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 0;
+}
+
+@media ( max-width : 1024px) {
+	footer {
+		width: calc(100% + 30px);
+	}
+}

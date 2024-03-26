@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.container {
+	margin: 50px auto;
+	max-width: 800px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+select, input[type="date"], input[type="submit"] {
+	margin-bottom: 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #8f8f8f;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #9ea7a7;
+}
