@@ -11,7 +11,7 @@ function checkNomeCognome(inputtxt) {
 
 
 function checkEmail(inputtxt) {
-	var email = /^[\w\.]+\@[a-z\.\d]+\.[a-z]{2,3}$/;
+	var email = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}$/;
 	if(inputtxt.value.match(email)) 
 		return true;
 	
